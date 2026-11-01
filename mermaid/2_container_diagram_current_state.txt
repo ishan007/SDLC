@@ -1,0 +1,17 @@
+As-built container view
+
+Read only the code under backend/ and .github/workflows/ci.yml. 
+Ignore everything under ops/, which describes a planned deployment, not this system. 
+In particular, ops/pipeline/ci-pipeline.yml is the planned pipeline, not the one that runs today: do not use it.
+
+Using the Mermaid MCP, produce a container view (C4 level 2 style) of the system as it is built today. 
+Work out the containers and their connections from the code yourself. 
+Do not add an element because it is usual in systems like this.
+
+Cite a file path or symbol for every node and every edge, for example Program.cs: AddSingleton<IInvoiceRepository, InMemoryInvoiceRepository>. 
+If you cannot cite something, do not draw it. 
+Put it in a separate list headed "Inferred, not cited" with your reasoning. 
+Output the Mermaid source, then a citation table (element, citation), then the inferred list.
+
+Output: submission/diagrams/container_diagram_current_state.md
+

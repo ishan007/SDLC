@@ -1,0 +1,1 @@
+Create an Architectural Decision Record (ADR) for this.

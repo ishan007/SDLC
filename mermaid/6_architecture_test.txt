@@ -1,0 +1,12 @@
+Architecture test
+
+Add one architecture test enforcing this rule from AGENTS.md: the Domain project contains no web or storage code. 
+Concretely, InvoiceApp.Domain must not reference InvoiceApp.Api or any Microsoft.AspNetCore.* assembly.
+
+Put it in backend/tests/InvoiceApp.Tests/ArchitectureTests.cs, following the conventions in AGENTS.md. AGENTS.md names test classes <ClassUnderTest>Tests. 
+This test covers a project, not a class, so ArchitectureTests is a deliberate exception. Say so in one line in your reply.
+
+Use reflection over the compiled assembly. Do not add a package unless reflection cannot do it.
+
+Run dotnet test backend/InvoiceApp.sln --filter FullyQualifiedName~ArchitectureTests and show the output.
+

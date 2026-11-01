@@ -1,20 +1,3 @@
-How to read this file: copy only the PASTE INTO CHAT section into the agent. FOR YOU stays with you.
-
-======== FOR YOU ========
-
-Run prompts 01 to 04 in this folder in one session, in order. The stress tests rely on this reply staying in context.
-
-After each reply, fill in submission/02-decision-record/agent-notes.md from 05-agent-notes-template.txt.
-
-When the session is finished, write the record yourself using 06-write-record.txt, then run 01-diagrams/06-update-target-state.txt.
-
-Nothing in the paste block to fill in.
-
-Save the transcript as submission/ai-logs/02-decision-record/01-tradeoffs.txt.
-Your notes go to submission/02-decision-record/agent-notes.md.
-
-======== PASTE INTO CHAT ========
-
 Exactly-once submission trade-offs
 
 Context: when an invoice is approved, it must be submitted to an external payment provider, PayEx, exactly once. Facts:
@@ -35,4 +18,4 @@ For each give: how it achieves exactly-once (or why it only achieves at-least-on
 Say which option, or combination, you recommend and why. 
 State any assumption about PayEx you could not verify, for example whether it accepts an idempotency key or offers a lookup-by-reference endpoint, and how the recommendation changes if that assumption is false.
 
-======== END PASTE ========
+

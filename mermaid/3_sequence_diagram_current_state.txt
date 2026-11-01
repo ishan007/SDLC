@@ -1,0 +1,14 @@
+
+
+As-built approval sequence diagram
+Using the Mermaid MCP, draw a sequence diagram for approving an invoice as the code works today. 
+Start at the click in wwwroot/app.js and end at the response the UI renders.
+
+Include sign-in token checking (SessionAuthMiddleware), the role check (RequireRoleAttribute), ApprovalsController.Approve, ApiControllerBase.Handle, ApprovalService.Approve and InMemoryInvoiceRepository. 
+Show the error paths for 401, 403, 404 and 409.
+
+Cite a file and method for every message. Put anything you could not cite in a separate "Inferred, not cited" list. 
+Output the Mermaid source, the citation table and the inferred list.
+
+Output: submission/diagrams/sequence_diagram_current_state.md
+

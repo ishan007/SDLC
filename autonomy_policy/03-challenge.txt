@@ -1,17 +1,4 @@
-How to read this file: copy only the PASTE INTO CHAT section into the agent. FOR YOU and AFTER THE REPLY stay with you.
-
-======== FOR YOU ========
-
-Use a fresh session, after policy.md exists.
-
-Before you send, replace:
-
-- <paste the block from 00-autonomy-levels.txt> with the PASTE THIS BLOCK text from 00-autonomy-levels.txt.
-- <paste draft> with the full text of submission/03-autonomy-policy/policy.md.
-
-======== PASTE INTO CHAT ========
-
-Challenge my draft policy
+Challenge policy
 
 Autonomy levels used in the policy:
 
@@ -21,7 +8,7 @@ L2  Draft for approval: the agent prepares the action; a named human approves be
 L3  Act with guardrails: the agent acts within fixed limits (read-only, reversible, rate-limited) and tells a human straight away; a human can undo it.
 L4  Autonomous: the agent acts and reports afterwards; a human reviews a sample.
 
-Below is my draft autonomy policy. Find the weakest points:
+Find the weakest points:
 
 Which task has a level its controls do not justify?
 Which "evidence to move up a level" could be satisfied without the task actually being safe?
@@ -31,12 +18,3 @@ Does the policy fit on one page? If not, what is padding?
 
 Do not rewrite the policy. List the issues with a one-line reason each.
 
-<paste draft>
-
-======== END PASTE ========
-
-======== AFTER THE REPLY ========
-
-Revise the page yourself from the issues listed. Keep the final policy in submission/03-autonomy-policy/policy.md, with the day-one level stated near the top.
-
-======== END AFTER ========

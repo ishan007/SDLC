@@ -1,13 +1,3 @@
-How to read this file: copy only the PASTE INTO CHAT section into the agent. FOR YOU stays with you.
-
-======== FOR YOU ========
-
-Nothing in the paste block to fill in.
-
-Commit lead time from git log is the second number the plan asks you to capture today. It goes into submission/05-risk-audit/measurement-plan.md.
-
-======== PASTE INTO CHAT ========
-
 Capture the repository baseline
 
 Using git log (and gh if it is available and the repo has a remote), compute what lead-time and review-turnaround data exists today: commit count, date range, time between commits, author date versus commit date, and any PR open-to-merge times. Show the exact commands, and save them as a script in submission/05-risk-audit/git-metrics.sh.
@@ -18,6 +8,5 @@ how many commits or PRs would be needed before the numbers mean anything
 what will produce that history (PRs on every change from now on, deploy events once Azure App Service exists)
 the date by which you expect a usable baseline
 
-Output: numbers into submission/05-risk-audit/measurement-plan.md. Commit lead time from git log is the second number the plan asks you to capture today.
+Output: numbers into submission/risk-audit/measurement-plan.md. Commit lead time from git log is the second number the plan asks you to capture today.
 
-======== END PASTE ========

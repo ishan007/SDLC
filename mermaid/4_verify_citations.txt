@@ -1,0 +1,9 @@
+Verify the citations
+For each citation in the tables below, open the cited file and confirm the element exists there and behaves as the diagram shows. 
+Report a table: element, citation, verdict (correct / wrong file / wrong behaviour / does not exist), evidence (line number).
+Then list anything in the code on the approval path that the diagrams left out.
+
+You can find citation tables here - 
+submission/diagrams/sequence_diagram_current_state.md
+submission/diagrams/container_diagram_current_state.md
+

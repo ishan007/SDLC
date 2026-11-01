@@ -1,0 +1,17 @@
+Interim target state diagrams
+
+Starting from the corrected as-built diagrams below, draw the target state once persistence and PayEx are in. 
+Include Azure SQL in place of the in-memory store, PayEx, and Azure Service Bus because it is provisioned and unused. 
+Produce a container view and an approval sequence diagram.
+
+Rules:
+
+Mark every element that does not exist in the code today with a dashed border or dashed line, and the label "(planned)".
+Keep every existing element and its citation unchanged.
+For planned elements, cite the source of the requirement (assignment.md or a named ops/ file) instead of code.
+After the diagrams, list each planned element and the as-built element it replaces or extends.
+
+<paste corrected as-built Mermaid>
+
+Output: submission/diagrams/container_diagram_target_state.md and submission/diagrams/sequence_diagram_target_state.md
+

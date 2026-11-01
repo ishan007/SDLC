@@ -1,0 +1,16 @@
+Measurement baseline plan
+
+For this repository (GitHub, GitHub Actions; Azure App Service planned), define how to measure each metric before the on-call rotation starts:
+
+Lead time for changes
+Change failure rate
+Review turnaround
+
+For each give: the exact definition (start and end events), the exact source, the exact command or query (gh, git log, GitHub API, KQL), and what is not available today and why. 
+Be explicit about which numbers can be captured now and which need production deploys or PR history that does not exist yet.
+
+Note that ops/pipeline/run-timings.csv is the CI history of the planned pipeline (ops/pipeline/ci-pipeline.yml), not of .github/workflows/ci.yml. 
+Say which source each number comes from.
+
+Output: update submission/risk-audit/measurement-plan.md, with the two captured numbers.
+

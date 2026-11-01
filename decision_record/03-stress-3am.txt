@@ -1,15 +1,3 @@
-How to read this file: copy only the PASTE INTO CHAT section into the agent. FOR YOU and AFTER THE REPLY stay with you.
-
-======== FOR YOU ========
-
-Same session as 01-tradeoffs.txt. Nothing in the paste block to fill in.
-
-Send this after both preference messages in 02-stress-preference.txt have been answered.
-
-======== PASTE INTO CHAT ========
-
-Stress test 2: 3 a.m. on month-end
-
 It is 3 a.m. on the last working day of the month. Approvals are running at 80 a minute, and PayEx starts timing out on one call in five. Walk through, minute by minute, what your recommended design does:
 
 What happens to each timed-out submission?
@@ -20,12 +8,7 @@ Can any invoice be paid twice or not at all? Show the exact sequence that causes
 What does the on-call engineer see, what do they have to do, and what can they safely do without understanding the code?
 What state is left to clean up in the morning?
 
-Also look at ops/incidents/INC-2047/ and say whether anything in that incident would have happened under your design. Cite the log lines you rely on.
+Also look at ops/incidents/INC-2047/ and say whether anything in that incident would have happened under your design. 
+Cite the log lines you rely on.
 
-======== END PASTE ========
 
-======== AFTER THE REPLY ========
-
-In submission/02-decision-record/agent-notes.md, note any number the agent stated as fact without deriving it, and any Service Bus or PayEx behaviour it asserted that you could not confirm.
-
-======== END AFTER ========

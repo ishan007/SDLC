@@ -1,0 +1,19 @@
+
+
+Task inventory for month-end log triage
+
+Autonomy levels we will use later (for reference only):
+
+L0  Off: the agent does not do this task.
+L1  Suggest: the agent reads and proposes; a human does the action.
+L2  Draft for approval: the agent prepares the action; a named human approves before it runs.
+L3  Act with guardrails: the agent acts within fixed limits (read-only, reversible, rate-limited) and tells a human straight away; a human can undo it.
+L4  Autonomous: the agent acts and reports afterwards; a human reviews a sample.
+
+List the individual tasks inside this workflow for the Invoice Approval service, for example for log triage: collect logs, cluster errors, link to recent deploys, propose a cause, page someone, roll back.
+
+For each task give: what goes wrong if an agent does it badly, whether the action can be undone, and what data or systems it touches. 
+Use ops/incidents/INC-2041 as a worked example. 
+
+Output: submission/autonomy-policy/policy.md
+
