@@ -1,0 +1,19 @@
+How to read this file: this file is your step. There is no paste section.
+
+======== FOR YOU ========
+
+Write the decision record yourself. Do not paste an agent draft in as the record, and do not send this file to the agent.
+
+Do this after prompts 01 to 04 and after submission/02-decision-record/agent-notes.md is filled in.
+
+Save it to submission/02-decision-record/decision-record.md with these sections:
+
+Context. The service, PayEx, the volume, the timeout behaviour, and the seven-year audit requirement.
+Decision. The option you chose: a dedupe table, an outbox and a worker, nightly reconciliation, or a combination. State what you rejected.
+Consequences. What this costs to build and to run, and how it fails at 3 a.m. on the last day of the month.
+What would make you revisit this. The specific trigger that would change the decision.
+Where the agent was wrong or useless. Use that heading exactly. Take the specifics from agent-notes.md, including whether the recommendation moved when you stated a preference, any number it did not derive, and any PayEx or Service Bus behaviour it invented.
+
+Then run 01-diagrams/06-update-target-state.txt so the target diagrams match this decision.
+
+Output: submission/02-decision-record/decision-record.md.

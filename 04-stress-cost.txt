@@ -1,0 +1,27 @@
+How to read this file: copy only the PASTE INTO CHAT section into the agent. FOR YOU and AFTER THE REPLY stay with you.
+
+======== FOR YOU ========
+
+Same session as 01-tradeoffs.txt. Nothing in the paste block to fill in.
+
+Send this after 03-stress-3am.txt has been answered.
+
+======== PASTE INTO CHAT ========
+
+Stress test 3: cost
+
+What does the recommended design cost?
+
+To build: components, rough engineer-weeks, and what must exist before January.
+To run: Azure costs (Service Bus tier, SQL storage for seven years of audit and dedupe data), on-call load, and runbooks needed.
+Compared with the cheapest of the other two options, what do we pay extra and what risk does that buy down?
+
+Show your arithmetic and mark every number you assumed rather than derived. For any Azure price, say whether it comes from a source you can name or from memory.
+
+======== END PASTE ========
+
+======== AFTER THE REPLY ========
+
+Check at least one Azure price against the Azure pricing page and record the difference in submission/02-decision-record/agent-notes.md.
+
+======== END AFTER ========
