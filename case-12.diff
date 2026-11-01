@@ -1,0 +1,29 @@
+diff --git a/backend/tests/InvoiceApp.Tests/ApprovalServiceTests.cs b/backend/tests/InvoiceApp.Tests/ApprovalServiceTests.cs
+--- a/backend/tests/InvoiceApp.Tests/ApprovalServiceTests.cs
++++ b/backend/tests/InvoiceApp.Tests/ApprovalServiceTests.cs
+@@ -74,5 +74,25 @@ public class ApprovalServiceTests
+         var service = ServiceFor(InvoiceWith("INV-1", InvoiceStatus.PendingApproval));
+
+         Assert.Throws<ArgumentException>(() => service.Reject("INV-1", "demo.approver", "  "));
+     }
++
++    [Fact]
++    public void Approve_RejectsInvoiceThatIsAlreadyDecided()
++    {
++        var service = ServiceFor(InvoiceWith("INV-1", InvoiceStatus.Approved));
++
++        Assert.Throws<InvalidOperationException>(() => service.Approve("INV-1", "demo.admin"));
++    }
++
++    [Fact]
++    public void Reject_WithoutAReason_LeavesTheInvoicePending()
++    {
++        var invoice = InvoiceWith("INV-1", InvoiceStatus.PendingApproval);
++        var service = ServiceFor(invoice);
++
++        Assert.Throws<ArgumentException>(() => service.Reject("INV-1", "demo.approver", ""));
++
++        Assert.Equal(InvoiceStatus.PendingApproval, invoice.Status);
++        Assert.Null(invoice.DecidedBy);
++    }
+ }
