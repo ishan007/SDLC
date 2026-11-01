@@ -1,0 +1,21 @@
+How to read this file: this file is your step. There is no paste section.
+
+======== FOR YOU ========
+
+Write the autonomy policy yourself. Do not have the agent draft the page, and do not send this file to the agent.
+
+Do this after the task inventory and the trial run.
+
+Pick one workflow. Month-end log triage is the easiest because ops/incidents/INC-2041/ gives you material. If you pick first-response incident summaries, use INC-2047 instead.
+
+Write one page to submission/03-autonomy-policy/policy.md. State the day-one level near the top. Use the levels in 00-autonomy-levels.txt. Cover:
+
+Which tasks sit at which level.
+The controls that make that level safe.
+The evidence needed to move a task up a level. Use submission/03-autonomy-policy/trial-results.md as the first evidence.
+Who approves the move.
+Which level this team can run on day one of the rotations. Two of the six engineers are new to the codebase.
+
+Then run 04-challenge-policy.txt on this draft and keep the final page in the same file.
+
+Output: submission/03-autonomy-policy/policy.md.
