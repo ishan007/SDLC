@@ -1,0 +1,15 @@
+Run one eval pass with subagents
+
+Run eval pass <1 / 2 / 3 / 4-changed>. For each file in ops/evals/cases/ (case-01 to case-12):
+
+Spawn a fresh general-purpose subagent, not a fork, with model <model>. Use the same model for runs 1 to 3. In run 4, change the model only if the model is the one variable you change.
+Build the subagent's prompt from two parts only: the lines between "======== <BASELINE or CHANGED> ========" and "======== END <BASELINE or CHANGED> ========" in 04-review-eval/review-prompts.txt, and the full case diff pasted inline where it says <paste case diff>.
+Start the subagent prompt with: "Do not use any tools. Do not read, search or open any file. Review only the diff below."
+Give no repository context, no case number, and no hints about which cases contain defects.
+Save its full reply, unedited, to submission/ai-logs/04-review-eval/run-<n>/<case>.txt.
+
+Run the subagents in parallel. Do not score the results. I will score them myself.
+
+After the pass, tell me if any subagent used a tool anyway, and for which case.
+
+
