@@ -1,0 +1,31 @@
+How to read this file: copy only the PASTE INTO CHAT section into the agent. FOR YOU stays with you.
+
+======== FOR YOU ========
+
+Leave <package> and <package>@1.2.3 as written. The agent chooses the package and pins a real version.
+
+After the agent edits .mcp.json, restart the session so the new MCP loads, then send:
+
+Render a one-node test diagram to confirm the Mermaid MCP works.
+
+The paste block asks the agent to record the package, exact version, and whether it makes network calls in submission/05-risk-audit/agent-setup.md. Keep that note for task 5.
+
+Save the transcript as submission/ai-logs/00-setup/01-add-mermaid-mcp.txt.
+
+======== PASTE INTO CHAT ========
+
+Add the Mermaid MCP
+
+Add a Mermaid MCP server to .mcp.json next to the existing playwright entry. Tell me which package you chose and why, and which tools it exposes. Do not change any other file.
+
+Before adding it, check the package on the npm registry (npm view <package>): publisher, repository link, weekly downloads, last publish date. 
+Prefer a package from a known maintainer with a linked source repository. 
+Pin an exact version in args (for example <package>@1.2.3), not @latest. 
+Tell me whether it makes network calls (for example to a hosted rendering service). 
+This matters for the lethal-trifecta audit in task 5.
+
+After I restart the session, render a one-node test diagram to confirm it works.
+
+Output: the .mcp.json change, and the package, version and network behaviour noted in submission/05-risk-audit/agent-setup.md for use in task 5.
+
+======== END PASTE ========

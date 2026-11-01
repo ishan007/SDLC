@@ -1,0 +1,41 @@
+How to read this file: copy only the PASTE INTO CHAT section into the agent. FOR YOU stays with you.
+
+======== FOR YOU ========
+
+Run this only after you have written submission/02-decision-record/decision-record.md (02-decision-record/06-write-record.txt).
+
+Before you send, replace:
+
+- <outbox / idempotency key / reconciliation / combination> with the option in your decision record.
+- <paste interim target Mermaid> with the interim diagrams from submission/01-diagrams/target-container.md and target-sequence.md.
+
+The agent replaces those two target files with the final diagrams.
+
+======== PASTE INTO CHAT ========
+
+Update the target diagrams
+
+Starting from the interim target diagrams below, update them so the PayEx path matches the option in my decision record: <outbox / idempotency key / reconciliation / combination>. 
+Use the facts in assignment.md (Azure App Service, Azure SQL, Azure Service Bus, PayEx with a 30-second timeout, a 7-year audit requirement).
+
+Include at least:
+
+Azure SQL for invoices, and whatever tables my decision needs (outbox, dedupe or reconciliation).
+The PayEx submission path and the component that calls PayEx.
+The notification path seen in ops/incidents/INC-2047/: a publisher in the approval service, a Service Bus topic or queue, and a notification worker. Cite the incident file for each, and mark them planned.
+A store for the approval audit trail that must be kept for seven years, separate from or clearly inside the invoice tables. Say which.
+
+Produce a container view and an approval sequence diagram.
+
+Rules:
+
+Mark every element that does not exist in the code today with a dashed border or dashed line, and the label "(planned)".
+Keep every existing element and its citation unchanged.
+For planned elements, cite the source of the requirement (assignment.md, a named ops/ file, or my decision record) instead of code.
+After the diagrams, list each planned element and the as-built element it replaces or extends.
+
+<paste interim target Mermaid>
+
+Output: replace submission/01-diagrams/target-container.md and target-sequence.md with these final diagrams.
+
+======== END PASTE ========
